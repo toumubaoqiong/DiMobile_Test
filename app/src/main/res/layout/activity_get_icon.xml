@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <TextView
+        android:id="@+id/TextView_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="请输入网址"/>
+
+    <EditText
+        android:id="@+id/EditText_input"
+        android:layout_below="@id/TextView_des"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:hint="https://tieba.baidu.com"/>
+
+    <Button
+        android:id="@+id/Button_analyze"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditText_input"
+        android:text="解析"
+        android:textSize="24dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/analyze_btn_bg"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Button_analyze">
+
+        <ImageView
+            android:id="@+id/ImageView_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="show icon"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
